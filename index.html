@@ -3,170 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S-Noh | Academic Portfolio</title>
+    <title>SIWAN NOH (노시완)</title>
     <style>
-        /* CSS 스타일 시작 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e9ecef; /* 은은한 회색 배경 */
-            color: #495057;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-bottom: 1px solid #eee;
         }
-
-        .portfolio-wrap {
-            width: 100%;
-            max-width: 1000px;
-            margin: 40px auto;
-            background: #ffffff;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .header-section {
-            background-color: #004d99; /* 진한 파란색 헤더 */
-            color: white;
-            padding: 30px 40px;
-            text-align: left;
-        }
-
-        .header-section h1 {
-            margin: 0;
-            font-size: 2.8em;
-            letter-spacing: 1px;
-        }
-
-        .header-section p {
-            margin-top: 5px;
+        .header-title a {
             font-size: 1.2em;
-            opacity: 0.85;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
         }
-
-        .content-section {
-            padding: 40px;
+        .nav a {
+            margin-left: 20px;
+            color: #555;
+            text-decoration: none;
         }
-
-        h2 {
-            color: #004d99;
-            border-bottom: 3px solid #004d99;
-            padding-bottom: 8px;
-            margin-top: 0;
-            margin-bottom: 25px;
-            font-size: 1.8em;
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 0;
         }
-
-        .item {
+        .profile-photo {
+            width: 100%;
+            height: 300px; /* 사진 크기에 따라 조절 */
+            background: url('your_profile_image_url.jpg') center center/cover no-repeat;
             margin-bottom: 30px;
-            padding-left: 15px;
-            border-left: 4px solid #f0ad4e; /* 강조색 */
+            /* 실제 이미지를 사용하려면 background 속성을 수정하거나 <img> 태그 사용 */
         }
-
-        .item h3 {
-            color: #343a40;
-            margin-top: 0;
+        .profile-info {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .profile-info h1 {
+            font-size: 2.2em;
             margin-bottom: 5px;
-            font-size: 1.3em;
         }
-
-        .item p {
-            font-size: 0.95em;
+        .profile-info h2 {
+            font-size: 1.1em;
+            font-weight: normal;
+            margin-top: 0;
+        }
+        .contact-links a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .section {
+            margin-bottom: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .section h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        .item-list {
+            list-style: none;
+            padding: 0;
+        }
+        .item-list li {
             margin-bottom: 10px;
         }
-
-        .skill-list {
-            list-style: disc;
-            margin-left: 20px;
-        }
-
-        .contact-info a {
-            color: #004d99;
-            text-decoration: none;
+        .item-list .date {
             font-weight: bold;
+            display: inline-block;
+            width: 90px;
         }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        
-        .footer-section {
-            background-color: #343a40;
-            color: #ccc;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-        }
-        /* CSS 스타일 끝 */
     </style>
 </head>
 <body>
-    <div class="portfolio-wrap">
+
+    <header class="header">
+        <div class="header-title">
+            <a href="#">SIWAN NOH (노시완)</a>
+        </div>
+        <nav class="nav">
+            <a href="#about">About Me</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#search">🔍</a>
+        </nav>
+    </header>
+
+    <div class="container">
         
-        <header class="header-section">
-            <h1>S-Noh</h1>
-            <p>컴퓨터공학부 1학년 | 학습 여정 & 기술 포트폴리오</p>
-        </header>
-
-        <div class="content-section">
-            
-            <section id="summary">
-                <h2>요약 (Summary)</h2>
-                <p>
-                    IT 기술에 대한 깊은 호기심을 바탕으로, 프로그래밍 언어의 기본 구조와 컴퓨터 시스템의 원리를 탐구하고 있습니다. 
-                    대학교 1학년 과정을 통해 **자료구조**와 **알고리즘**에 대한 탄탄한 이해를 목표로 하며, 
-                    특히 **Git과 GitHub**를 활용한 협업 및 프로젝트 관리에 익숙해지는 것에 집중하고 있습니다.
-                </p>
-            </section>
-
-            <section id="education">
-                <h2>학력 및 교육</h2>
-                <div class="item">
-                    <h3>OO대학교 컴퓨터공학부</h3>
-                    <p>재학 중 (2024년 3월 입학)</p>
-                    <p><strong>주요 관심 분야:</strong> 웹 서비스 아키텍처, 네트워크 통신</p>
-                </div>
-            </section>
-
-            <section id="skills">
-                <h2>핵심 기술 스택</h2>
-                <ul class="skill-list">
-                    <li>**프로그래밍 언어:** C (기본 문법), Python (데이터 처리 및 스크립팅)</li>
-                    <li>**마크업/스타일:** HTML5, CSS3 (기본 레이아웃 및 스타일링 이해)</li>
-                    <li>**버전 관리:** **Git & GitHub** (개인/팀 프로젝트 버전 관리 및 협업 경험)</li>
-                    <li>**운영 환경:** Windows, WSL 환경에서의 Linux 기본 명령어 사용 가능</li>
-                </ul>
-            </section>
-
-            <section id="projects">
-                <h2>주요 프로젝트 및 과제</h2>
-                <div class="item">
-                    <h3>1. GitHub Pages 개인 홈페이지 구축</h3>
-                    <p>GitHub Repository를 활용하여 정적 웹 호스팅 환경을 이해하고 개인 포트폴리오 페이지를 배포했습니다. (HTML/CSS 기반)</p>
-                    <p><a href="https://s-noh.github.io" target="_blank">프로젝트 링크 바로가기</a></p>
-                </div>
-                <div class="item">
-                    <h3>2. C언어 배열 기반 간단한 미로 찾기 (가제)</h3>
-                    <p>C 언어의 배열과 반복문을 활용하여 텍스트 기반의 미로 찾기 프로그램을 구현했습니다.</p>
-                    <p><strong>주요 학습 내용:</strong> 메모리 관리, 함수 포인터 (학습 예정)</p>
-                </div>
-            </section>
-
-            <section id="contact">
-                <h2>연락처</h2>
-                <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                    <p><strong>GitHub Profile:</strong> <a href="https://github.com/S-Noh" target="_blank">github.com/S-Noh</a></p>
-                </div>
-            </section>
-
+        <div class="profile-photo" role="img" aria-label="Profile photo of Siwan Noh with a scenic background.">
+            <img src="your_profile_image_url.jpg" alt="Siwan Noh profile photo" style="width: 100%; height: auto; display: block;"/>
         </div>
 
-        <footer class="footer-section">
-            &copy; 2024 S-Noh Academic Portfolio | 업데이트: 2024년 11월
-        </footer>
+        <section class="profile-info">
+            <h1>SIWAN NOH (노 시 완)</h1>
+            <h2>Assistant Professor</h2>
+            <p>
+                Department of Game Engineering, Dong-Eui University, Republic of Korea.<br>
+                (47340) #601, Building No. 20, 176 Eomgwangno, Busanjin-gu, Busan, Republic of Korea
+            </p>
+            <div class="contact-links">
+                <a href="mailto:nsw@deu.ac.kr">nsw@deu.ac.kr</a> | 
+                <a href="https://scholar.google.com/citations?user=your_id" target="_blank">Google Scholar</a> | 
+                <a href="https://www.researchgate.net/profile/your_id" target="_blank">Researchgate</a>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <h3>Education</h3>
+            <ul class="item-list">
+                <li>
+                    <span class="date">2023.08.</span> **Ph.D. in Information Security**, Pukyong National University, Republic of Korea.
+                </li>
+                <li>
+                    <span class="date">2018.02.</span> **M.S. in Information Security**, Pukyong National University, Republic of Korea.
+                </li>
+                <li>
+                    <span class="date">2016.02.</span> **B.S. in IT Convergence and Application Engineering**, Pukyong National University, Republic of Korea.
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" id="experience">
+            <h3>Experience</h3>
+            <ul class="item-list">
+                <li>
+                    <span class="date">2025.03. - present</span> **Assistant Professor**, Department of Game Engineering, Dong-Eui University, Republic of Korea.
+                </li>
+                <li>
+                    <span class="date">2023.09. - 2025.02.</span> **Postdoctoral Research Fellow**, Industrial Science Technology Research Center, Pukyong National University, Republic of Korea.
+                </li>
+                <li>
+                    <span class="date">2020.11. - 2021.05.</span> **Visiting Scholar**, Georgia State University, USA.
+                </li>
+            </ul>
+        </section>
+
+        <section class="profile-info" style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 30px;">
+            <img src="your_google_cert_image_url.png" alt="Google for Education Certified Educator Level 1" style="max-width: 250px;"/>
+        </section>
+
     </div>
 </body>
 </html>
